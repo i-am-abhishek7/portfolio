@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Myself Soumit Das</title>
+    <title>Myself Abhishek Thakur</title>
     <meta
       name="description"
       content="An Engineering undergraduate student passionate about web technologies, worked with React, Vue, NodeJS, Express, MongoDB, PostgreSQL, Git and also familiar with Python, TypeScript, GraphQL, CI/CD"
     />
-    <meta property="og:image" content="https://www.soumitdas.com/static/images/soumitdas.jpg" />
-    <meta
-      name="keywords"
-      content="Soumit Das, Javascript, React, Vue, NodeJS, Express, MongoDB, PostgreSQL, Git, Python, TypeScript, GraphQL, CI/CD"
-    />
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       rel="preload"
@@ -30,14 +26,19 @@
     />
     <link rel="stylesheet" href="./static/css/style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115210819-5"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-115210819-5"
+    ></script>
     <script>
       if (window.location.hostname !== "localhost") {
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-        gtag('config', 'UA-115210819-5');
+        gtag("config", "UA-115210819-5");
       }
     </script>
   </head>
@@ -61,13 +62,21 @@
           </ul>
         </nav>
         <div class="home-banner">
-          <div class="banner-image">
-            <img src="./static/images/soumitdas_transp.png" alt="Soumit Das" />
+          <div class="banner-image" style="background: none">
+            <img src="./static/images/user.png" alt="Abhishek Thakur" />
           </div>
           <div class="banner-text">
             <h3>Hi 👋</h3>
-            <h1 class="heading-primary">I'm Soumit Das</h1>
-            <p class="subtitle">Fullstack Javascript Developer</p>
+            <h1 class="heading-primary">I'm Abhishek Thakur</h1>
+            <p class="subtitle">
+              Frontend Engineer
+              <a
+                style="color: #5ea6f5; text-decoration: none"
+                href="https://www.refyne.co.in"
+                target="_blank"
+                >@Refyne</a
+              >
+            </p>
             <a href="#contact" class="button button-orange">Contact me</a>
           </div>
         </div>
@@ -86,11 +95,6 @@
             <img
               src="https://s.svgbox.net/files.svg?ic=reactjs&fill=000000"
               alt="Reactjs"
-              class="skills-icon"
-            />
-            <img
-              src="https://s.svgbox.net/files.svg?ic=vue&fill=000000"
-              alt="Vuejs"
               class="skills-icon"
             />
             <img
@@ -114,11 +118,6 @@
               class="skills-icon"
             />
             <img
-              src="https://s.svgbox.net/files.svg?ic=python&fill=000000"
-              alt="python3"
-              class="skills-icon"
-            />
-            <img
               src="https://s.svgbox.net/files.svg?ic=git&fill=000000"
               alt="git"
               class="skills-icon"
@@ -137,13 +136,52 @@
           <article class="project-card">
             <figure class="project-image">
               <img
-                src="https://i.imgur.com/p5w8kGt.jpg"
-                alt="JABS screenshot"
+                src="/public/static/images/giphy.png"
+                alt="Localnote screenshot"
               />
             </figure>
             <div class="project-text">
-              <h3>Just Another Book Store</h3>
-              <p>A MERN stack e-commerce project</p>
+              <h3>GIPHY Clone</h3>
+              <p>A GIPHY clone using React+vite</p>
+              <div class="tags">
+                <span class="tag tag-small tag-javascript">#javascript</span>
+                <span class="tag tag-small tag-purple">#history-routing</span>
+                <span class="tag tag-small tag-danger">#react</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://kaleidoscopic-kataifi-7b0d51.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link-text"
+                >
+                  Live Demo <span>&rarr;</span>
+                </a>
+                <a
+                  href="https://github.com/i-am-abhishek7/giphy-clone"
+                  title="View Source Code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./static/images/github.svg"
+                    class="project-source"
+                    alt="GitHub"
+                  />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <figure class="project-image">
+              <img
+                src="../public/static//images/eyeonCrypto.png"
+                alt="EyeOncrypto screenshot"
+              />
+            </figure>
+            <div class="project-text">
+              <h3>EyeOnCrypto 👁️on💵</h3>
+              <p>A MERN stack project</p>
               <!-- <ul>
                 <li>JavaScript</li>
               </ul> -->
@@ -156,7 +194,7 @@
               </div>
               <div class="project-links">
                 <a
-                  href="https://jabs.netlify.app/"
+                  href="https://eyeoncrypto.cyclic.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="link-text"
@@ -164,7 +202,7 @@
                   Live Demo <span>&rarr;</span>
                 </a>
                 <a
-                  href="https://github.com/soumitdas/jabs"
+                  href="https://github.com/i-am-abhishek7/crypto-app"
                   title="View Source Code"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -181,23 +219,24 @@
           <article class="project-card">
             <figure class="project-image">
               <img
-                src="https://i.imgur.com/MnHKpUg.jpg"
+                src="../public/static/images/rock-paper-scissor.png"
                 alt="Klassroom screenshot"
               />
             </figure>
             <div class="project-text">
-              <h3>Klassroom</h3>
+              <h3>Rock Paper Scissor</h3>
               <p>
-                An online classroom environment built using Vue and Firebase
+                Samll and simple childhood game ROCK PAPER SCISSORS mini game
+                project using HTML, CSS & JS
               </p>
               <div class="tags">
-                <span class="tag tag-small tag-vue">#vue</span>
-                <span class="tag tag-small tag-javascript">#javascript</span>
-                <span class="tag tag-small tag-firebase">#firebase</span>
+                <span class="tag tag-small tag-vue">#HTML</span>
+                <span class="tag tag-small tag-javascript">#CSS</span>
+                <span class="tag tag-small tag-firebase">#Javascript</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://klassroom-demo.web.app/"
+                  href="https://silly-payne-cdb637.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="link-text"
@@ -205,7 +244,7 @@
                   Live Demo <span>&rarr;</span>
                 </a>
                 <a
-                  href="https://github.com/soumitdas/klassroom"
+                  href="https://github.com/i-am-abhishek7/Rock-Paper-Scissors-Game"
                   title="View Source Code"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -221,24 +260,20 @@
           </article>
           <article class="project-card">
             <figure class="project-image">
-              <img
-                src="https://i.imgur.com/UJefdzF.webp"
-                alt="Shortlink screenshot"
-              />
+              <img src="/public/static/images/music-player.png"" alt="Shortlink
+              screenshot" />
             </figure>
             <div class="project-text">
-              <h3>Shortlink</h3>
-              <p>A simple URL shortener built using MERN stack</p>
+              <h3>Your Music Player</h3>
+              <p>A simple Spotify clone using HTML, CSS & Js</p>
               <div class="tags">
-                <span class="tag tag-small tag-react">#react</span>
-                <span class="tag tag-small tag-node">#node</span>
-                <span class="tag tag-small">#express</span>
-                <span class="tag tag-small tag-mongo">#mongoDB</span>
-                <span class="tag tag-small tag-javascript">#javascript</span>
+                <span class="tag tag-small tag-react">#html</span>
+                <span class="tag tag-small tag-node">#css</span>
+                <span class="tag tag-small">#javascript</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://app.go6.in/"
+                  href="https://your-music-player.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="link-text"
@@ -246,7 +281,7 @@
                   Live Demo <span>&rarr;</span>
                 </a>
                 <a
-                  href="https://github.com/soumitdas/shortlink"
+                  href="https://github.com/i-am-abhishek7/Music-Player"
                   title="View Source Code"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -263,21 +298,21 @@
           <article class="project-card">
             <figure class="project-image">
               <img
-                src="https://i.imgur.com/iZ7I5j2.webp"
+                src="/public/static/images/react-quiz.png"
                 alt="Kichir Michir screenshot"
               />
             </figure>
             <div class="project-text">
-              <h3>Kichir Michir</h3>
-              <p>A microblogging platform built using React and Firebase</p>
+              <h3>The React Quiz</h3>
+              <p>A Simple React+Vite Quiz Application</p>
               <div class="tags">
                 <span class="tag tag-small tag-react">#react</span>
-                <span class="tag tag-small tag-firebase">#firebase</span>
+                <span class="tag tag-small tag-firebase">#vite</span>
                 <span class="tag tag-small tag-javascript">#javascript</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://kichirmichir-dev.web.app/"
+                  href="https://6640999ef60fc1ae1f89b569--wondrous-crumble-4cfd20.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="link-text"
@@ -285,7 +320,7 @@
                   Live Demo <span>&rarr;</span>
                 </a>
                 <a
-                  href="https://github.com/soumitdas/kichirmichir"
+                  href="https://github.com/i-am-abhishek7/react-quiz"
                   title="View Source Code"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -299,48 +334,10 @@
               </div>
             </div>
           </article>
-          <article class="project-card">
-            <figure class="project-image">
-              <img
-                src="https://i.imgur.com/CKouyd8.webp"
-                alt="Localnote screenshot"
-              />
-            </figure>
-            <div class="project-text">
-              <h3>Local Note</h3>
-              <p>A Note-taking app built using Vanilla JS (no framework)</p>
-              <div class="tags">
-                <span class="tag tag-small tag-javascript">#javascript</span>
-                <span class="tag tag-small tag-purple">#history-routing</span>
-                <span class="tag tag-small tag-danger">#no-framework</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://localnote.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link-text"
-                >
-                  Live Demo <span>&rarr;</span>
-                </a>
-                <a
-                  href="https://github.com/soumitdas/localnote"
-                  title="View Source Code"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="./static/images/github.svg"
-                    class="project-source"
-                    alt="GitHub"
-                  />
-                </a>
-              </div>
-            </div>
-          </article>
+
           <div class="show-more-button">
             <a
-              href="https://github.com/soumitdas"
+              href="https://github.com/i-am-abhishek7/"
               class="button button-orange"
               target="_blank"
               rel="noopener noreferrer"
@@ -356,24 +353,24 @@
             <article class="card">
               <header class="card-header">
                 <p>
-                  <time datetime="2020-12-25">Dec 25, 2020 </time
-                  ><span>&middot;</span> 7 min read
+                  <time datetime="2024-05-12">May 12, 2024</time
+                  ><span>&middot;</span> 2 min read
                 </p>
                 <h3>
-                  DevOps-ify your Firebase app using Github Actions
+                  Mastering React Optimization
                   <span>😎</span>
                 </h3>
               </header>
               <div class="card-content">
                 <p>
-                  One of the best ways to increase the productivity of a
-                  software developer is to automate any manual or repetitive
-                  task. In this article, I will show...
+                  React is a powerful JavaScript library for building user
+                  interfaces, but without proper optimization techniques,
+                  applications can suffer from performance issues....
                 </p>
               </div>
               <div class="card-links">
                 <a
-                  href="https://soumitdas.hashnode.dev/devopsify-your-firebase-app-using-github-actions"
+                  href="https://abhishekthakurr.hashnode.dev/mastering-react-optimization-best-practices-for-high-performance-applications"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="link-text"
@@ -385,23 +382,23 @@
             <article class="card">
               <header class="card-header">
                 <p>
-                  <time datetime="2020-12-24">Dec 24, 2020 </time
-                  ><span>&middot;</span> 6 min read
+                  <time datetime="2024-05-12">May 12, 2024</time
+                  ><span>&middot;</span> 2 min read
                 </p>
                 <h3>
-                  How to deploy a React application using Firebase hosting
-                  <span>🤔</span>
+                  Exploring React Methodology
+                  <span>🗺️</span>
                 </h3>
               </header>
               <div class="card-content">
                 <p>
-                  Firebase is a Backend as a service (BaaS) platform developed
-                  and maintained by Google to helps developers...
+                  React has revolutionized frontend development with its
+                  component-based architecture and declarative approach...
                 </p>
               </div>
               <div class="card-links">
                 <a
-                  href="https://soumitdas.hashnode.dev/how-to-deploy-a-react-application-using-firebase-hosting"
+                  href="https://abhishekthakurr.hashnode.dev/exploring-react-methodology-best-practices-and-patterns"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="link-text"
@@ -413,23 +410,49 @@
             <article class="card">
               <header class="card-header">
                 <p>
-                  <time datetime="2020-12-21">Dec 21, 2020 </time
-                  ><span>&middot;</span> 6 min read
+                  <time datetime="2024-05-12">May 12, 2024</time
+                  ><span>&middot;</span> 2 min read
                 </p>
-                <h3>
-                  How to use JSON as an Environment variable <span>🤔</span>
-                </h3>
+                <h3>State Management with Redux <span>😳</span></h3>
               </header>
               <div class="card-content">
                 <p>
-                  While deploying an app into the production environment
-                  variables are the preferred approach to store sensitive
-                  credentials. In this article, I will discuss...
+                  State management is a critical aspect of frontend development,
+                  especially in complex applications. Redux is a predictable
+                  state container for JavaScript apps, widely used with
+                  libraries like React....
                 </p>
               </div>
               <div class="card-links">
                 <a
-                  href="https://soumitdas.hashnode.dev/how-to-use-json-as-an-environment-variable"
+                  href="https://abhishekthakurr.hashnode.dev/state-management-with-redux-a-complete-guide"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link-text"
+                >
+                  Read more <span>&rarr;</span>
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <header class="card-header">
+                <p>
+                  <time datetime="2024-05-12">May 12, 2024</time
+                  ><span>&middot;</span> 2 min read
+                </p>
+                <h3>Building Progressive Web Apps (PWAs)<span>🕸️</span></h3>
+              </header>
+              <div class="card-content">
+                <p>
+                  n recent years, Progressive Web Apps (PWAs) have emerged as a
+                  powerful approach to building web applications that offer a
+                  native app-like experience while leveraging the reach and
+                  accessibility of the web....
+                </p>
+              </div>
+              <div class="card-links">
+                <a
+                  href="https://abhishekthakurr.hashnode.dev/building-progressive-web-apps-pwas-a-comprehensive-guide"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="link-text"
@@ -441,7 +464,7 @@
           </div>
           <div class="show-more-button">
             <a
-              href="https://soumitdas.hashnode.dev/"
+              href="https://abhishekthakurr.hashnode.dev/"
               class="button button-orange"
               target="_blank"
               rel="noopener noreferrer"
@@ -458,8 +481,8 @@
             I am always excited to work on some awesome projects, drop me an
             email and let's discuss over coffee. 😊
           </p>
-          <a href="mailto:contact@soumitdas.com" class="button"
-            >contact@soumitdas.com</a
+          <a href="mailto:akthakuron120@gmail.com" class="button"
+            >akthakuron120@gmail.com</a
           >
         </div>
       </section>
@@ -469,7 +492,7 @@
         <ul class="footer-social-links">
           <li class="footer-social-link-item">
             <a
-              href="https://www.linkedin.com/in/soumitdas99"
+              href="https://www.linkedin.com/in/abhishek-thakur-b6b0691b9/"
               title="Link to LinkedIn Profile"
             >
               <img
@@ -481,7 +504,7 @@
           </li>
           <li class="footer-social-link-item">
             <a
-              href="https://github.com/soumitdas/"
+              href="https://github.com/i-am-abhishek7/"
               title="Link to Github Profile"
             >
               <img
@@ -493,7 +516,7 @@
           </li>
           <li class="footer-social-link-item">
             <a
-              href="https://twitter.com/soumitdas99"
+              href="https://twitter.com/Abhishek1313"
               title="Link to Twitter Profile"
             >
               <img
@@ -505,7 +528,7 @@
           </li>
         </ul>
         <p>
-          Made with ❤️ by Soumit. <br />
+          Made with ❤️ by Abhishek. <br />
           No &copy; copyright, feel free to copy
         </p>
       </div>
